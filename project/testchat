@@ -1,0 +1,9 @@
+#!/bin/bash
+echo say something
+while true
+do
+    read  input
+    #echo $input
+	curl -d "message=$input" http://127.0.0.1:8000/api/talk/ 
+    echo
+done
